@@ -38,7 +38,7 @@ export class WindowPreviewMenu extends PopupMenu.PopupMenu {
         super(source, 0.5, Utils.getPosition());
 
         // We want to keep the item hovered while the menu is up
-        this.blockSourceEvents = true;
+        this.blockSourceEvents = false;
 
         this._source = source;
         this._app = this._source.app;
@@ -62,6 +62,31 @@ export class WindowPreviewMenu extends PopupMenu.PopupMenu {
         Utils.addActor(Main.uiGroup, this.actor);
 
         this.connect('destroy', this._onDestroy.bind(this));
+
+        
+        this.actor.connect('enter-event', () => {
+            if (this._hideTimeoutId) {
+                GLib.source_remove(this._hideTimeoutId);
+                this._hideTimeoutId = 0;
+            }
+            if (this._source._hidePreviewTimeoutId) {
+                GLib.source_remove(this._source._hidePreviewTimeoutId);
+                this._source._hidePreviewTimeoutId = 0;
+            }
+        });
+
+        this.actor.connect('leave-event', () => {
+            if (this._hideTimeoutId) {
+                GLib.source_remove(this._hideTimeoutId);
+            }
+            this._hideTimeoutId = GLib.timeout_add(GLib.PRIORITY_DEFAULT, 350, () => {
+                this._hideTimeoutId = 0;
+                if (!this.actor.has_pointer && !this._source.hover) {
+                    this.close();
+                }
+                return GLib.SOURCE_REMOVE;
+            });
+        });
     }
 
     _redisplay() {
@@ -77,7 +102,7 @@ export class WindowPreviewMenu extends PopupMenu.PopupMenu {
         if (windows.length > 0) {
             this._redisplay();
             this.open(BoxPointer.PopupAnimation.FULL);
-            this.actor.navigate_focus(null, St.DirectionType.TAB_FORWARD, false);
+            
             this._source.emit('sync-tooltip');
         }
     }
@@ -370,7 +395,7 @@ class WindowPreviewMenuItem extends PopupMenu.PopupBaseMenuItem {
         overlayGroup.add_child(this.closeButton);
 
         const label = new St.Label({text: window.get_title()});
-        const {previewMaxWidth: maxWidth = 250} = Docking.DockManager.settings;
+        const maxWidth = Docking.DockManager.settings.get_int('preview-max-width');
         label.set_style(`max-width: ${maxWidth}px`);
         const labelBin = new St.Bin({
             child: label,
@@ -384,7 +409,6 @@ class WindowPreviewMenuItem extends PopupMenu.PopupBaseMenuItem {
         const box = new St.BoxLayout({
             vertical: true,
             reactive: true,
-            x_expand: true,
         });
 
         if (box.add) {
@@ -420,18 +444,16 @@ class WindowPreviewMenuItem extends PopupMenu.PopupBaseMenuItem {
         const emptySize = [0, 0, 0];
 
         const mutterWindow = this._window.get_compositor_private();
-        if (!mutterWindow?.get_texture())
+        if (!mutterWindow)
             return emptySize;
 
         const [width, height] = mutterWindow.get_size();
         if (!width || !height)
             return emptySize;
 
-        let {
-            previewSizeScale: scale,
-            previewMaxWidth: maxWidth = 250,
-            previewMaxHeight: maxHeight = 150
-        } = Docking.DockManager.settings;
+        let scale = Docking.DockManager.settings.get_double('preview-size-scale');
+        const maxWidth = Docking.DockManager.settings.get_int('preview-max-width');
+        const maxHeight = Docking.DockManager.settings.get_int('preview-max-height');
 
         if (!scale) {
             // a simple example with 1680x1050:

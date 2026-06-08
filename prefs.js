@@ -305,6 +305,14 @@ const DockSettings = GObject.registerClass({
         this._settings.set_double('preview-size-scale', scale.get_value());
     }
 
+    preview_max_width_value_changed_cb(spinbutton) {
+        this._settings.set_int('preview-max-width', spinbutton.get_value());
+    }
+
+    preview_max_height_value_changed_cb(spinbutton) {
+        this._settings.set_int('preview-max-height', spinbutton.get_value());
+    }
+
     custom_opacity_scale_value_changed_cb(scale) {
         // Avoid settings the opacity consinuosly as it's change is animated
         if (this._opacity_timeout > 0)
@@ -587,6 +595,10 @@ const DockSettings = GObject.registerClass({
         });
         this._builder.get_object('preview_size_scale').set_value(
             this._settings.get_double('preview-size-scale'));
+        this._builder.get_object('preview_max_width_spinbutton').set_value(
+            this._settings.get_int('preview-max-width'));
+        this._builder.get_object('preview_max_height_spinbutton').set_value(
+            this._settings.get_int('preview-max-height'));
 
         // Corrent for rtl languages
         if (this._rtl) {

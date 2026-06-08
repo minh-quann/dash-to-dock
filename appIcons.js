@@ -262,6 +262,18 @@ export const DockAbstractAppIcon = GObject.registerClass({
                 GLib.source_remove(this._showPreviewTimeoutId);
                 this._showPreviewTimeoutId = 0;
             }
+            if (this._previewMenu && this._previewMenu.isOpen) {
+                if (this._hidePreviewTimeoutId) {
+                    GLib.source_remove(this._hidePreviewTimeoutId);
+                }
+                this._hidePreviewTimeoutId = GLib.timeout_add(GLib.PRIORITY_DEFAULT, 350, () => {
+                    this._hidePreviewTimeoutId = 0;
+                    if (!this.hover && !this._previewMenu.actor.has_pointer) {
+                        this._previewMenu.close();
+                    }
+                    return GLib.SOURCE_REMOVE;
+                });
+            }
         }
     }
 
@@ -764,11 +776,7 @@ export const DockAbstractAppIcon = GObject.registerClass({
 
     _windowPreviews() {
         if (!this._previewMenu) {
-            this._previewMenuManager = new PopupMenu.PopupMenuManager(this);
-
             this._previewMenu = new WindowPreview.WindowPreviewMenu(this);
-
-            this._previewMenuManager.addMenu(this._previewMenu);
 
             this._previewMenu.connect('open-state-changed', (menu, isPoppedUp) => {
                 if (!isPoppedUp)
