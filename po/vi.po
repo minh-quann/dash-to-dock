@@ -1,0 +1,718 @@
+# Vietnamese translations for Dash to Dock package.
+# Copyright (C) 2026 THE Dash to Dock'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Dash to Dock package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Dash to Dock\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-05 17:25+0700\n"
+"PO-Revision-Date: 2026-06-05 17:25+0700\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: Vietnamese <vi@li.org>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Translators: This will be followed by Display Name - Connector.
+#: prefs.js:382
+msgid "Primary monitor: "
+msgstr "Màn hình chính: "
+
+#. Translators: Followed by monitor index, Display Name - Connector.
+#: prefs.js:388
+msgid "Secondary monitor "
+msgstr "Màn hình phụ "
+
+#: prefs.js:434 Settings.ui:597
+msgid "Right"
+msgstr "Phải"
+
+#: prefs.js:435 Settings.ui:569
+msgid "Left"
+msgstr "Trái"
+
+#: prefs.js:490
+msgid "Intelligent autohide customization"
+msgstr "Tùy chỉnh tự động ẩn thông minh"
+
+#: prefs.js:498 prefs.js:816 prefs.js:875
+msgid "Reset to defaults"
+msgstr "Khôi phục mặc định"
+
+#: prefs.js:649
+msgid "Managed by GNOME Multitasking's Application Switching setting."
+msgstr "Quản lý bởi cài đặt Chuyển đổi ứng dụng của GNOME Đa nhiệm."
+
+#: prefs.js:808
+msgid "Show dock and application numbers"
+msgstr "Hiện thanh dock và số lượng ứng dụng"
+
+#: prefs.js:867
+msgid "Customize middle-click behavior"
+msgstr "Tùy chỉnh hành vi nhấp chuột giữa"
+
+#: prefs.js:964
+msgid "Customize running indicators"
+msgstr "Tùy chỉnh chỉ báo đang chạy"
+
+#: prefs.js:1079 Settings.ui:2197
+msgid "Customize opacity"
+msgstr "Tùy chỉnh độ mờ"
+
+#: docking.js:1307
+msgid "Dash"
+msgstr "Dash"
+
+#: docking.js:2567 appIcons.js:1187
+msgid "Unpin"
+msgstr "Bỏ ghim"
+
+#: docking.js:2567 appIcons.js:1193
+msgid "Pin to Dock"
+msgstr "Ghim vào Dock"
+
+#: appIcons.js:438
+#, javascript-format
+msgid "%s is updating, try again later"
+msgstr "%s đang cập nhật, vui lòng thử lại sau"
+
+#: appIcons.js:1097
+#, javascript-format
+msgid "%s is being updated…"
+msgstr "%s đang được cập nhật…"
+
+#: appIcons.js:1108
+msgid "All Windows"
+msgstr "Tất cả cửa sổ"
+
+#. Translators: This is the heading of a list of open windows
+#: appIcons.js:1120
+msgid "Open Windows"
+msgstr "Mở cửa sổ"
+
+#: appIcons.js:1140
+msgid "New Window"
+msgstr "Cửa sổ mới"
+
+#: appIcons.js:1159
+msgid "Launch using Integrated Graphics Card"
+msgstr "Khởi chạy bằng card đồ họa tích hợp"
+
+#: appIcons.js:1160
+msgid "Launch using Discrete Graphics Card"
+msgstr "Khởi chạy bằng card đồ họa rời"
+
+#: appIcons.js:1205 appIcons.js:1231
+msgid "App Details"
+msgstr "Chi tiết ứng dụng"
+
+#: appIcons.js:1260 appIcons.js:1272 Settings.ui:84 Settings.ui:156
+#: Settings.ui:228
+msgid "Quit"
+msgstr "Thoát"
+
+#: appIcons.js:1275
+#, javascript-format
+msgid "Quit %d Window"
+msgid_plural "Quit %d Windows"
+msgstr[0] "Đóng %d cửa sổ"
+
+#: appIcons.js:1560
+msgid "Dash to Dock"
+msgstr "Dash to Dock"
+
+#: appIcons.js:1562
+msgid "Settings"
+msgstr "Cài đặt"
+
+#: locations.js:540
+msgid "Mount"
+msgstr "Gắn kết"
+
+#: locations.js:542
+msgid "Unmount"
+msgstr "Bỏ gắn kết"
+
+#: locations.js:544
+msgid "Eject"
+msgstr "Đẩy ra"
+
+#: locations.js:604
+#, javascript-format
+msgid "Failed to mount “%s”"
+msgstr "Lỗi gắn kết “%s”"
+
+#: locations.js:609
+#, javascript-format
+msgid "Failed to unmount “%s”"
+msgstr "Lỗi bỏ gắn kết “%s”"
+
+#: locations.js:614
+#, javascript-format
+msgid "Failed to eject “%s”"
+msgstr "Lỗi đẩy “%s” ra"
+
+#: locations.js:627
+msgid "Mount operation already in progress"
+msgstr "Thao tác gắn kết đang được thực hiện"
+
+#: locations.js:632
+msgid "Unmount operation already in progress"
+msgstr "Thao tác bỏ gắn kết đang được thực hiện"
+
+#: locations.js:637
+msgid "Eject operation already in progress"
+msgstr "Thao tác đẩy ra đang được thực hiện"
+
+#: locations.js:763
+msgid "Trash"
+msgstr "Thùng rác"
+
+#: locations.js:804
+msgid "Empty Trash"
+msgstr "Làm sạch thùng rác"
+
+#: locations.js:1074
+#, javascript-format
+msgid "Failed to launch “%s”"
+msgstr "Lỗi khi khởi chạy “%s”"
+
+#: Settings.ui:41
+msgid ""
+"When set to minimize, double clicking minimizes all the windows of the "
+"application."
+msgstr ""
+"Khi đặt thành thu nhỏ, nhấp đúp sẽ thu nhỏ tất cả các cửa sổ của ứng dụng."
+
+#: Settings.ui:59
+msgid "Shift+Click action"
+msgstr "Hành động Shift+Click"
+
+#: Settings.ui:73 Settings.ui:145 Settings.ui:217 Settings.ui:1684
+msgid "Raise window"
+msgstr "Nâng cửa sổ lên"
+
+#: Settings.ui:74 Settings.ui:146 Settings.ui:218
+msgid "Minimize window"
+msgstr "Thu nhỏ cửa sổ"
+
+#: Settings.ui:75 Settings.ui:147 Settings.ui:219 Settings.ui:1686
+msgid "Launch new instance"
+msgstr "Khởi chạy phiên bản mới"
+
+#: Settings.ui:76 Settings.ui:148 Settings.ui:220 Settings.ui:1687
+#: Settings.ui:1775
+msgid "Cycle through windows"
+msgstr "Chuyển qua lại các cửa sổ"
+
+#: Settings.ui:77 Settings.ui:149 Settings.ui:221 Settings.ui:1688
+msgid "Minimize or overview"
+msgstr "Thu nhỏ hoặc tổng quan"
+
+#: Settings.ui:78 Settings.ui:150 Settings.ui:222 Settings.ui:1689
+msgid "Show window previews"
+msgstr "Hiện xem trước cửa sổ"
+
+#: Settings.ui:79 Settings.ui:151 Settings.ui:223 Settings.ui:1690
+msgid "Minimize or show previews"
+msgstr "Thu nhỏ hoặc hiện xem trước"
+
+#: Settings.ui:80 Settings.ui:152 Settings.ui:224 Settings.ui:1691
+msgid "Focus or show previews"
+msgstr "Tập trung hoặc hiện xem trước"
+
+#: Settings.ui:81 Settings.ui:153 Settings.ui:225 Settings.ui:1692
+msgid "Focus or app spread"
+msgstr "Tập trung hoặc dàn ứng dụng"
+
+#: Settings.ui:82 Settings.ui:154 Settings.ui:226 Settings.ui:1693
+msgid "Focus, minimize or show previews"
+msgstr "Tập trung, thu nhỏ hoặc xem trước"
+
+#: Settings.ui:83 Settings.ui:155 Settings.ui:227 Settings.ui:1694
+msgid "Focus, minimize or app spread"
+msgstr "Tập trung, thu nhỏ hoặc dàn ứng dụng"
+
+#: Settings.ui:113
+msgid "Behavior for Middle-Click."
+msgstr "Hành vi cho Nhấp chuột giữa."
+
+#: Settings.ui:131
+msgid "Middle-Click action"
+msgstr "Hành động nhấp chuột giữa"
+
+#: Settings.ui:185
+msgid "Behavior for Shift+Middle-Click."
+msgstr "Hành vi cho Shift+Nhấp chuột giữa."
+
+#: Settings.ui:203
+msgid "Shift+Middle-Click action"
+msgstr "Hành động Shift+Nhấp chuột giữa"
+
+#: Settings.ui:305
+msgid "Enable Unity7 like glossy backlit items"
+msgstr "Bật các mục bóng bẩy như Unity7"
+
+#: Settings.ui:318
+msgid "Apply glossy effect."
+msgstr "Áp dụng hiệu ứng bóng bẩy."
+
+#: Settings.ui:330
+msgid "Use dominant color"
+msgstr "Dùng màu chủ đạo"
+
+#: Settings.ui:355
+msgid "Customize indicator style"
+msgstr "Tùy chỉnh kiểu dáng chỉ báo"
+
+#: Settings.ui:381
+msgid "Color"
+msgstr "Màu sắc"
+
+#: Settings.ui:401
+msgid "Border color"
+msgstr "Màu viền"
+
+#: Settings.ui:421
+msgid "Border width"
+msgstr "Độ dày viền"
+
+#: Settings.ui:502
+msgid "Show the dock on"
+msgstr "Hiển thị dock ở"
+
+#: Settings.ui:523
+msgid "Show on all monitors"
+msgstr "Hiển thị trên tất cả màn hình"
+
+#: Settings.ui:559
+msgid "Position on screen"
+msgstr "Vị trí trên màn hình"
+
+#: Settings.ui:578
+msgid "Bottom"
+msgstr "Dưới"
+
+#: Settings.ui:587
+msgid "Top"
+msgstr "Trên"
+
+#: Settings.ui:642
+msgid ""
+"Hide the dock when it obstructs a window of the current application. More "
+"refined settings are available."
+msgstr ""
+"Ẩn dock khi nó che khuất cửa sổ của ứng dụng hiện tại. Có các cài đặt chi tiết hơn."
+
+#: Settings.ui:659
+msgid "Intelligent autohide"
+msgstr "Tự động ẩn thông minh"
+
+#: Settings.ui:735
+msgid "Dock size limit"
+msgstr "Giới hạn kích thước dock"
+
+#: Settings.ui:757
+msgid "Panel mode: extend to the screen edge"
+msgstr "Chế độ bảng điều khiển: mở rộng tới cạnh màn hình"
+
+#: Settings.ui:769
+msgid "Place icons to the center"
+msgstr "Đặt biểu tượng vào giữa"
+
+#: Settings.ui:794
+msgid "Icon size limit"
+msgstr "Giới hạn kích cỡ biểu tượng"
+
+#: Settings.ui:820
+msgid "Fixed icon size: scroll to reveal other icons"
+msgstr "Cố định cỡ biểu tượng: cuộn để hiển thị các biểu tượng khác"
+
+#: Settings.ui:848
+msgid "Preview size scale"
+msgstr "Tỷ lệ kích thước xem trước"
+
+#: Settings.ui:890
+msgid "Position and size"
+msgstr "Vị trí và kích thước"
+
+#: Settings.ui:940
+msgid "Show pinned applications"
+msgstr "Hiển thị ứng dụng đã ghim"
+
+#: Settings.ui:977
+msgid "Show running applications"
+msgstr "Hiển thị ứng dụng đang chạy"
+
+#: Settings.ui:987
+msgid "Isolate workspaces"
+msgstr "Cách ly không gian làm việc"
+
+#: Settings.ui:1000
+msgid "Show urgent windows despite current workspace"
+msgstr "Hiển thị các cửa sổ khẩn cấp bất kể không gian làm việc hiện tại"
+
+#: Settings.ui:1013
+msgid "Isolate monitors"
+msgstr "Cách ly màn hình"
+
+#: Settings.ui:1027
+msgid "Show open windows' previews"
+msgstr "Hiện bản xem trước của cửa sổ đang mở"
+
+#: Settings.ui:1064
+msgid "Keep the focused application always visible in the dash"
+msgstr "Giữ ứng dụng được tập trung luôn hiển thị trên dash"
+
+#: Settings.ui:1101
+msgid ""
+"If disabled, these settings are accessible from gnome-tweak-tool or the "
+"extension website."
+msgstr ""
+"Nếu bị tắt, những cài đặt này có thể truy cập được từ công cụ tinh chỉnh gnome hoặc trang web extension."
+
+#: Settings.ui:1118
+msgid "Show <i>Applications</i> icon"
+msgstr "Hiển thị biểu tượng <i>Ứng dụng</i>"
+
+#: Settings.ui:1129
+msgid "Move at beginning of the dock"
+msgstr "Di chuyển lên đầu của dock"
+
+#: Settings.ui:1150
+msgid "Animate <i>Show Applications</i>"
+msgstr "Hiệu ứng khi <i>Hiển thị ứng dụng</i>"
+
+#: Settings.ui:1171
+msgid "Put <i>Show Applications</i> in a dock edge when using Panel mode"
+msgstr "Đặt <i>Hiển thị ứng dụng</i> ở rìa dock khi sử dụng chế độ Bảng điều khiển"
+
+#: Settings.ui:1211
+msgid "Show trash can"
+msgstr "Hiển thị thùng rác"
+
+#: Settings.ui:1248
+msgid "Show volumes and devices"
+msgstr "Hiển thị phân vùng và thiết bị"
+
+#: Settings.ui:1258
+msgid "Only if mounted"
+msgstr "Chỉ khi đã được gắn kết"
+
+#: Settings.ui:1271
+msgid "Include network volumes"
+msgstr "Bao gồm cả các ổ mạng"
+
+#: Settings.ui:1311
+msgid "Isolate volumes, devices and trash windows from file manager"
+msgstr "Cách ly các cửa sổ phân vùng, thiết bị và thùng rác khỏi trình quản lý tập tin"
+
+#: Settings.ui:1348
+msgid "Wiggle urgent applications"
+msgstr "Lắc nhẹ các ứng dụng khẩn cấp"
+
+#: Settings.ui:1385
+msgid "Hide application tooltip"
+msgstr "Ẩn chú giải công cụ của ứng dụng"
+
+#: Settings.ui:1422
+msgid "Show icons emblems"
+msgstr "Hiển thị các huy hiệu biểu tượng"
+
+#: Settings.ui:1435
+msgid ""
+"When enabled application icons will show notification counters and progress-"
+"bars (if Unity API is used)."
+msgstr ""
+"Khi được bật, biểu tượng ứng dụng sẽ hiển thị bộ đếm thông báo và thanh tiến trình (nếu có sử dụng API Unity)."
+
+#: Settings.ui:1450
+msgid "Show the number of unread notifications"
+msgstr "Hiển thị số lượng thông báo chưa đọc"
+
+#: Settings.ui:1471
+msgid "Application-provided counter overrides the notifications counter"
+msgstr "Bộ đếm do ứng dụng cung cấp sẽ ghi đè bộ đếm thông báo"
+
+#: Settings.ui:1498
+msgid "Launchers"
+msgstr "Khởi chạy"
+
+#: Settings.ui:1538
+msgid ""
+"Enable Super+(0-9) as shortcuts to activate apps. It can also be used "
+"together with Shift and Ctrl."
+msgstr ""
+"Kích hoạt Super+(0-9) làm phím tắt để kích hoạt ứng dụng. Cũng có thể dùng kết hợp với Shift và Ctrl."
+
+#: Settings.ui:1557
+msgid "Use keyboard shortcuts to activate apps"
+msgstr "Sử dụng phím tắt bàn phím để kích hoạt ứng dụng"
+
+#: Settings.ui:1633
+msgid "Behaviour when clicking on the icon of a running application."
+msgstr "Hành vi khi nhấp vào biểu tượng của ứng dụng đang chạy."
+
+#: Settings.ui:1651
+msgid "Click action"
+msgstr "Hành động nhấp chuột"
+
+#: Settings.ui:1685
+msgid "Minimize"
+msgstr "Thu nhỏ"
+
+#: Settings.ui:1739
+msgid "Behaviour when scrolling on the icon of an application."
+msgstr "Hành vi khi cuộn trên biểu tượng của ứng dụng."
+
+#: Settings.ui:1757
+msgid "Scroll action"
+msgstr "Hành động cuộn"
+
+#: Settings.ui:1774
+msgid "Do nothing"
+msgstr "Không làm gì"
+
+#: Settings.ui:1776
+msgid "Switch workspace"
+msgstr "Chuyển không gian làm việc"
+
+#: Settings.ui:1804
+msgid "Behavior"
+msgstr "Hành vi"
+
+#: Settings.ui:1854
+msgid "Save space reducing padding and border radius."
+msgstr "Tiết kiệm khoảng trống bằng cách giảm padding và bán kính viền."
+
+#: Settings.ui:1870
+msgid "Shrink the dash"
+msgstr "Thu hẹp dash"
+
+#: Settings.ui:1900
+msgid "Force straight corner"
+msgstr "Buộc dùng góc vuông"
+
+#: Settings.ui:1930
+msgid "Show overview on startup"
+msgstr "Hiển thị tổng quan khi khởi động"
+
+#: Settings.ui:1972
+msgid ""
+"Few customizations meant to integrate the dock with the default GNOME theme. "
+"Alternatively, specific options can be enabled below."
+msgstr ""
+"Vài tùy chỉnh nhỏ để tích hợp dock với chủ đề mặc định của GNOME. Ngoài ra, có thể bật các tùy chọn cụ thể dưới đây."
+
+#: Settings.ui:1990
+msgid "Use built-in theme"
+msgstr "Dùng chủ đề có sẵn"
+
+#: Settings.ui:2032
+msgid "Customize windows counter indicators"
+msgstr "Tùy chỉnh các chỉ báo số đếm cửa sổ"
+
+#: Settings.ui:2065 Settings.ui:2230
+msgid "Default"
+msgstr "Mặc định"
+
+#: Settings.ui:2066
+msgid "Dots"
+msgstr "Các dấu chấm"
+
+#: Settings.ui:2067
+msgid "Squares"
+msgstr "Các hình vuông"
+
+#: Settings.ui:2068
+msgid "Dashes"
+msgstr "Các dấu gạch ngang"
+
+#: Settings.ui:2069
+msgid "Segmented"
+msgstr "Chia đoạn"
+
+#: Settings.ui:2070
+msgid "Solid"
+msgstr "Chắc chắn"
+
+#: Settings.ui:2071
+msgid "Ciliora"
+msgstr "Ciliora"
+
+#: Settings.ui:2072
+msgid "Metro"
+msgstr "Metro"
+
+#: Settings.ui:2073
+msgid "Binary"
+msgstr "Nhị phân"
+
+#: Settings.ui:2074
+msgid "Dot"
+msgstr "Dấu chấm"
+
+#: Settings.ui:2107
+msgid "Set the background color for the dash."
+msgstr "Đặt màu nền cho dash."
+
+#: Settings.ui:2125
+msgid "Customize the dash color"
+msgstr "Tùy chỉnh màu của dash"
+
+#: Settings.ui:2181
+msgid "Tune the dash background opacity."
+msgstr "Chỉnh độ mờ nền của dash."
+
+#: Settings.ui:2231
+msgid "Fixed"
+msgstr "Cố định"
+
+#: Settings.ui:2232
+msgid "Dynamic"
+msgstr "Động"
+
+#: Settings.ui:2256
+msgid "Opacity"
+msgstr "Độ mờ"
+
+#: Settings.ui:2293
+msgid "Appearance"
+msgstr "Giao diện"
+
+#: Settings.ui:2332
+msgid "version: "
+msgstr "phiên bản: "
+
+#: Settings.ui:2347
+msgid "Moves the dash out of the overview transforming it in a dock"
+msgstr "Đưa dash ra khỏi màn hình tổng quan và biến nó thành một thanh dock"
+
+#: Settings.ui:2361
+msgid "Created by"
+msgstr "Tạo bởi"
+
+#: Settings.ui:2374
+msgid "Webpage"
+msgstr "Trang web"
+
+#: Settings.ui:2385
+msgid ""
+"<span size=\"small\">This program comes with ABSOLUTELY NO WARRANTY.\n"
+"See the <a href=\"https://www.gnu.org/licenses/old-licenses/"
+"gpl-2.0.html\">GNU General Public License, version 2 or later</a> for "
+"details.</span>"
+msgstr ""
+"<span size=\"small\">Chương trình này đi kèm mà KHÔNG CÓ BẤT KỲ SỰ BẢO HÀNH NÀO.\n"
+"Vui lòng xem chi tiết tại <a href=\"https://www.gnu.org/licenses/old-licenses/"
+"gpl-2.0.html\">GNU General Public License, phiên bản 2 hoặc mới hơn</a>.</span>"
+
+#: Settings.ui:2398
+msgid "About"
+msgstr "Giới thiệu"
+
+#: Settings.ui:2456
+msgid "Customize minimum and maximum opacity values"
+msgstr "Tùy chỉnh các giá trị độ mờ tối thiểu và tối đa"
+
+#: Settings.ui:2478
+msgid "Minimum opacity"
+msgstr "Độ mờ tối thiểu"
+
+#: Settings.ui:2508
+msgid "Maximum opacity"
+msgstr "Độ mờ tối đa"
+
+#: Settings.ui:2589
+msgid "Number overlay"
+msgstr "Lớp phủ số lượng"
+
+#: Settings.ui:2600
+msgid ""
+"Temporarily show the application numbers over the icons, corresponding to "
+"the shortcut."
+msgstr ""
+"Tạm thời hiện số hiệu ứng dụng trên các biểu tượng, tương ứng với phím tắt."
+
+#: Settings.ui:2646
+msgid "Show the dock if it is hidden"
+msgstr "Hiển thị dock nếu nó đang bị ẩn"
+
+#: Settings.ui:2657
+msgid ""
+"If using autohide, the dock will appear for a short time when triggering the "
+"shortcut."
+msgstr ""
+"Nếu dùng chế độ tự động ẩn, dock sẽ xuất hiện trong thời gian ngắn khi nhấn phím tắt."
+
+#: Settings.ui:2700
+msgid "Shortcut for the options above"
+msgstr "Phím tắt cho các tùy chọn trên"
+
+#: Settings.ui:2711
+msgid "Syntax: <Shift>, <Ctrl>, <Alt>, <Super>"
+msgstr "Cú pháp: <Shift>, <Ctrl>, <Alt>, <Super>"
+
+#: Settings.ui:2758 Settings.ui:3056
+msgid "Hide timeout (s)"
+msgstr "Thời gian chờ ẩn (giây)"
+
+#: Settings.ui:2815
+msgid "Show the dock by mouse hover on the screen edge."
+msgstr "Hiện thanh dock khi trỏ chuột vào cạnh màn hình."
+
+#: Settings.ui:2832
+msgid "Autohide"
+msgstr "Tự động ẩn"
+
+#: Settings.ui:2853
+msgid "Push to show: require pressure to show the dock"
+msgstr "Đẩy để hiện: yêu cầu lực đẩy vào cạnh để hiện dock"
+
+#: Settings.ui:2864
+msgid "Enable in fullscreen mode"
+msgstr "Bật trong chế độ toàn màn hình"
+
+#: Settings.ui:2876
+msgid "Show dock for urgent notifications"
+msgstr "Hiện dock đối với các thông báo khẩn"
+
+#: Settings.ui:2905
+msgid "Show the dock when it doesn't obstruct application windows."
+msgstr "Hiện dock khi nó không cản trở cửa sổ của các ứng dụng."
+
+#: Settings.ui:2922
+msgid "Dodge windows"
+msgstr "Né các cửa sổ"
+
+#: Settings.ui:2947
+msgid "All windows"
+msgstr "Tất cả cửa sổ"
+
+#: Settings.ui:2955
+msgid "Only focused application's windows"
+msgstr "Chỉ các cửa sổ của ứng dụng được tập trung"
+
+#: Settings.ui:2962
+msgid "Only maximized windows"
+msgstr "Chỉ các cửa sổ được phóng to"
+
+#: Settings.ui:2969
+msgid "Always on top"
+msgstr "Luôn ở trên cùng"
+
+#: Settings.ui:3012
+msgid "Animation duration (s)"
+msgstr "Thời lượng hiệu ứng (giây)"
+
+#: Settings.ui:3068
+msgid "Show timeout (s)"
+msgstr "Thời gian chờ hiện (giây)"
+
+#: Settings.ui:3080
+msgid "Pressure threshold"
+msgstr "Ngưỡng lực đẩy"

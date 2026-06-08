@@ -234,10 +234,44 @@ export const DockAbstractAppIcon = GObject.registerClass({
 
         this._previewMenuManager = null;
         this._previewMenu = null;
+
+        this.connect('notify::hover', this._onHover.bind(this));
+    }
+
+    _onHover() {
+        if (this.hover) {
+            if (this._showPreviewTimeoutId) {
+                GLib.source_remove(this._showPreviewTimeoutId);
+                this._showPreviewTimeoutId = 0;
+            }
+            if (this.running && this.windowsCount > 0) {
+                this._showPreviewTimeoutId = GLib.timeout_add(GLib.PRIORITY_DEFAULT, DASH_ITEM_LABEL_SHOW_TIME, () => {
+                    this._showPreviewTimeoutId = 0;
+                    if (this.hover && this.running && this.windowsCount > 0) {
+                        if (!this._previewMenu) {
+                            this._windowPreviews();
+                        } else if (!this._previewMenu.isOpen) {
+                            this._previewMenu.popup();
+                        }
+                    }
+                    return GLib.SOURCE_REMOVE;
+                });
+            }
+        } else {
+            if (this._showPreviewTimeoutId) {
+                GLib.source_remove(this._showPreviewTimeoutId);
+                this._showPreviewTimeoutId = 0;
+            }
+        }
     }
 
     _onDestroy() {
         super._onDestroy();
+
+        if (this._showPreviewTimeoutId) {
+            GLib.source_remove(this._showPreviewTimeoutId);
+            this._showPreviewTimeoutId = 0;
+        }
 
         // This is necessary due to an upstream bug
         // https://bugzilla.gnome.org/show_bug.cgi?id=757556

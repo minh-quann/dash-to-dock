@@ -26,8 +26,7 @@ import {
     Utils,
 } from './imports.js';
 
-const PREVIEW_MAX_WIDTH = 250;
-const PREVIEW_MAX_HEIGHT = 150;
+
 
 const PREVIEW_ANIMATION_DURATION = 250;
 const MAX_PREVIEW_GENERATION_ATTEMPTS = 15;
@@ -371,7 +370,8 @@ class WindowPreviewMenuItem extends PopupMenu.PopupBaseMenuItem {
         overlayGroup.add_child(this.closeButton);
 
         const label = new St.Label({text: window.get_title()});
-        label.set_style(`max-width: ${PREVIEW_MAX_WIDTH}px`);
+        const {previewMaxWidth: maxWidth = 250} = Docking.DockManager.settings;
+        label.set_style(`max-width: ${maxWidth}px`);
         const labelBin = new St.Bin({
             child: label,
             x_align: Clutter.ActorAlign.CENTER,
@@ -427,13 +427,18 @@ class WindowPreviewMenuItem extends PopupMenu.PopupBaseMenuItem {
         if (!width || !height)
             return emptySize;
 
-        let {previewSizeScale: scale} = Docking.DockManager.settings;
+        let {
+            previewSizeScale: scale,
+            previewMaxWidth: maxWidth = 250,
+            previewMaxHeight: maxHeight = 150
+        } = Docking.DockManager.settings;
+
         if (!scale) {
             // a simple example with 1680x1050:
             // * 250/1680 = 0,1488
             // * 150/1050 = 0,1429
             // => scale is 0,1429
-            scale = Math.min(1.0, PREVIEW_MAX_WIDTH / width, PREVIEW_MAX_HEIGHT / height);
+            scale = Math.min(1.0, maxWidth / width, maxHeight / height);
         }
 
         scale *= St.ThemeContext.get_for_stage(global.stage).scaleFactor;
